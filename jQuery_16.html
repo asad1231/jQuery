@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+ $(document).ready(function(){
+	$('.btn').click(function(){
+		alert($('#dog').attr("src"));//jQuery attr("src")함수는 src속성값을 가져옴.
+	}); 
+ });
+</script>
+</head>
+<body>
+ <img alt="강아지" src="../images/dog.jpg" id="dog" width="200" height="170">
+ <hr>
+ <input type="button" class="btn" value="attr()">
+</body>
+</html>
